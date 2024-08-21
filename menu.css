@@ -1,0 +1,85 @@
+body {
+  background: url(images/park.avif) no-repeat center fixed;
+  background-size: cover;
+  font-family: "Concert One", sans-serif;
+  margin: 0;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px 0;
+  margin: 100px 30px;
+  font-family: "Concert One", sans-serif;
+}
+
+.game-card {
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  min-width: 30%;
+  padding: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.game-card img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  height: 300px;
+}
+
+.game-card h2 {
+  margin: 10px 0;
+  font-size: 1.5em;
+  color: #ff6600;
+}
+
+.game-card button {
+  background: linear-gradient(45deg, #ef995bed, #ff6a1b);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: "Concert One", sans-serif;
+  
+}
+.game-card a{
+  text-decoration: none;
+  color: white;
+}
+
+.game-card button:hover {
+  background: linear-gradient(45deg, #efd45bed, #ff6a1b);
+}
+
+
+
+.back {
+  text-decoration: none;
+  background: linear-gradient(45deg, #e1ac85ed, #ff6a1b);
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  border: 2px solid wheat;
+  padding: 10px 20px; 
+  cursor: pointer;
+  position: absolute;
+  left: 640px;
+  top: 600px;
+  color: rgb(255, 255, 255);
+ 
+
+}

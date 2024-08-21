@@ -1,0 +1,119 @@
+body{
+  background:url(images/park.avif)  no-repeat center fixed;
+  background-size: cover;
+  position: relative;
+  font-family: "Concert One", sans-serif;
+  margin: 0;
+
+}
+.pegion{
+  position: absolute;
+  top: 110px;
+  left: 170px;
+  height: 90px;
+}
+.branch{
+  position: absolute;
+  height: 200px;
+  width: 300px;
+  margin-top: 60px;
+}
+.left{
+  position: absolute;
+  top: 150px;
+  left: 120px;
+}
+.left img{
+  height: 600px;
+  width: 600px;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.7));
+  
+}
+
+.title{
+  position: absolute;
+  left: 650px;
+  top: 90px;
+  color: rgb(48, 106, 41);
+  font-size: 62px;
+  font-weight: bold;
+  background: linear-gradient(45deg, #ff6ec4, #7873f5);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  margin-top: 20px;
+}
+.play{
+  position: absolute;
+  left: 950px;
+  top: 430px;
+  color: white;
+  background: linear-gradient(45deg, #e1ac85ed, #ff6a1b);
+  border: none;
+  padding: 20px 40px;
+  font-weight: bold;
+  font-family: "Concert One", sans-serif;
+  font-size: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  text-shadow:2px 2px 5px rgba(0, 0, 0, 0.2); 
+  border: 2px solid wheat;
+  cursor: pointer;
+  animation: pulse 1.5s infinite;
+  animation-delay: 2s;
+  text-decoration: none;
+
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.play:hover{
+ background: linear-gradient(45deg, #f8b42aed, #ff6a1b);;
+
+}
+#squirrel{
+  height: 180px;
+  width: 100px;
+  position: relative;
+  animation-name:bounceInSquirrel ;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  
+  
+}
+@keyframes bounceInSquirrel {
+  0% {
+    top: 392px;
+    left: 1400px;
+    transform: scale(1);
+  }
+  60% {
+    top: 290px; /* Move up slightly for the bounce */
+    left: 1070px;
+    transform: scale(1.2); /* Slight zoom for bounce effect */
+  }
+  80% {
+    top: 350px; /* Move down slightly for the bounce */
+    left: 1070px;
+    transform: scale(0.95); /* Slight shrink for bounce effect */
+  }
+  100% {
+    top: 332px;
+    left: 1070px;
+    transform: scale(1); /* Back to normal size */
+  }
+}
